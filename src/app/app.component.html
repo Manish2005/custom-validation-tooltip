@@ -1,0 +1,56 @@
+<br>
+<br>
+<div class="container">
+  <h3>Sample Form</h3>
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group required">
+          <label class="control-label">First Name
+            <app-validation-message [control]="form.get('firstName')" [messages]="errorMessages.firstName"></app-validation-message>
+          </label>
+          <input class="form-control" appControlValidate="test" formControlName="firstName" type="text">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group">
+          <label class="control-label">Middle Name</label>
+          <input class="form-control" formControlName="middleName" type="text">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group required">
+          <label class="control-label">Last Name
+            <app-validation-message [control]="form.get('lastName')" [messages]="errorMessages.lastName"></app-validation-message>
+          </label>
+          <input class="form-control" formControlName="lastName" type="text">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group">
+          <label class="control-label">Phone</label>
+          <input class="form-control" formControlName="phone" type="text">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group">
+          <label class="control-label">Email
+            <app-validation-message [control]="form.get('email')"></app-validation-message>
+          </label>
+          <input class="form-control" formControlName="email" type="text">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="form-group">
+          <label class="control-label">Age</label>
+          <input class="form-control" formControlName="age" type="text">
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button class="btn btn-primary" (click)="submitForm()">Submit</button>
+      <button class="btn btn-secondary" (click)="resetForm()">Reset</button>
+    </div>
+  </form>
+</div>
