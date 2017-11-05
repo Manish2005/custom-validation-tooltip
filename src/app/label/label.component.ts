@@ -9,7 +9,6 @@ import { AbstractControl } from '@angular/forms';
 export class CustomLabelComponent implements OnInit {
   @Input() control: AbstractControl
   @Input() messages?: any;
-  @Input() label: string;
 
   defaultMessages: any = {
     required: 'This field is required',

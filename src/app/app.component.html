@@ -6,40 +6,48 @@
     <div class="row">
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group required">
-          <app-label label="First Name" [control]="form.get('firstName')" [messages]="errorMessages.firstName">
+          <app-label [control]="form.get('firstName')" [messages]="errorMessages.firstName">
+            First Name
           </app-label>
           <input class="form-control" appControlValidate="test" formControlName="firstName" type="text">
         </div>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group">
-          <app-label label="Middle Name" [control]="form.get('middleName')" [messages]="errorMessages.middleName">
+          <app-label [control]="form.get('middleName')" [messages]="errorMessages.middleName">
+            Middle Name
           </app-label>
           <input class="form-control" formControlName="middleName" type="text">
         </div>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group required">
-          <app-label label="Last Name" [control]="form.get('lastName')" [messages]="errorMessages.lastName"></app-label>
+          <app-label [control]="form.get('lastName')" [messages]="errorMessages.lastName">
+            Last Name
+          </app-label>
           <input class="form-control" formControlName="lastName" type="text">
         </div>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group">
-          <app-label label="Phone" [control]="form.get('phone')" [messages]="errorMessages.phone">
+          <app-label [control]="form.get('phone')" [messages]="errorMessages.phone">
+            Phone
           </app-label>
           <input class="form-control" formControlName="phone" type="text">
         </div>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group">
-          <app-label label="Email" [control]="form.get('email')" [messages]="errorMessages.email"></app-label>
+          <app-label [control]="form.get('email')" [messages]="errorMessages.email">
+            Email
+          </app-label>
           <input class="form-control" formControlName="email" type="text">
         </div>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="form-group">
-          <app-label label="Age" [control]="form.get('age')" [messages]="errorMessages.age">
+          <app-label [control]="form.get('age')" [messages]="errorMessages.age">
+            Age
           </app-label>
           <input class="form-control" formControlName="age" type="text">
         </div>
